@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--
+        
+        CS3 | Module 8.1
+        Javascript Syntax
+
+        Objectives
+          - To identify the keywords used in JavaScript
+          - To incorporate JavaScript inside HTML documents 
+          - To practice the ethical standards regarding 
+            the use of JavaScript in browsers 
+
+        Created by Kyle Enorio.
+        December 16, 2024.
+
+        For use only within PSHS-SRC. Sharing of this code to 
+          outside entities is strictly prohibited.
+
+        Note that while multiple script elements exist, it is 
+          only intended for demonstration. It is always good
+          practice to place all JavaScript code into one
+          script element, or multiple script files if external.
+        
+        -->
+
+        <script>
+            // The code below outputs 'Hello, world' to
+            // the browser.
+            document.write('Hello, world!');
+        </script>
+
+        <br><br>
+
+        <!-- 
+            Imports JavaScript from a file. Note that a closing
+            tag is still added to the element.
+        -->
+        <script src="script.js"></script>
+
+        <br><br>
+
+        <script>
+            // The code below outputs 'Hello, world' to
+            // the consoles.
+            console.log('Hello, world!');
+        </script>
+
+        <script>
+            // The code below adds two numbers.
+            var a = 5;
+            var b = 3;
+            var total = a + b;
+
+            // Output the result to the browser.
+            document.write(total);
+        </script>
+
+        <br><br>
+
+        <script>
+            // Place opening curly brace at end of line.
+            // Place closing curly brace on new line.
+            function vat(price) {
+                var tax = 0.12;
+
+                // Add spaces between operators.
+                var finalPrice = price + (price * tax);
+
+                return finalPrice;
+            }
+
+            // Use camelCase when naming.
+            var firstName = 'Kyle';
+            var lastName = 'Enorio';
+
+            var grocery = 5000;
+
+            // Add new line if exceeding 80 characters.
+            document.write('Customer name: ' + firstName 
+                + ' ' + lastName + '<br>');
+
+            document.write('Total fee: ' + vat(grocery)
+                + '<br>');
+        </script>
+    </body>
+</html>
